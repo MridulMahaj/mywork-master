@@ -17,15 +17,15 @@ public class MainController {
         return restTemplate.getForObject(url, String.class);
     }
 
-    /*
+
     // Movie Service
     @GetMapping("/movies")
     public String getMovieData() {
         String url = "http://localhost:8084/api/movies";
         return restTemplate.getForObject(url, String.class);
-    }*/
+    }
 
-    /*
+
 
     // Tetris Service
     @GetMapping("/tetris")
@@ -33,7 +33,7 @@ public class MainController {
         String url = "http://localhost:8085/api/tetris";
         return restTemplate.getForObject(url, String.class);
     }
-    */
+
     // Weather Service
     @GetMapping("/weather")
     public String getWeatherData(@RequestParam String city) {
