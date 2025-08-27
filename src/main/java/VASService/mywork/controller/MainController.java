@@ -21,7 +21,7 @@ public class MainController {
     // Movie Service
     @GetMapping("/movies")
     public String getMovieData() {
-        String url = "http://localhost:8082/api/movies";
+        String url = "http://localhost:8084/api/movies";
         return restTemplate.getForObject(url, String.class);
     }*/
 
@@ -30,7 +30,7 @@ public class MainController {
     // Tetris Service
     @GetMapping("/tetris")
     public String getTetrisData() {
-        String url = "http://localhost:8083/api/tetris";
+        String url = "http://localhost:8085/api/tetris";
         return restTemplate.getForObject(url, String.class);
     }
     */
